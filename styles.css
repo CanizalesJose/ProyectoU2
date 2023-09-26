@@ -1,0 +1,90 @@
+img {
+    height: 100px;
+    width: 100px;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+
+    font-family: cursive;
+}
+
+.container {
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    width: 100vw;
+}
+.tituloLateral {
+    text-align: center;
+}
+.tituloSuscripcion {
+    text-align: center;
+}
+.suscribete {
+    text-align: center;
+    scale: 90%;
+}
+.cuadroTexto {
+    width: 50%;
+}
+.boton {
+    width: 50%;
+}
+
+/*Desktop*/
+@media screen and (min-width: 599px){
+    header {
+        display: flex;
+        width: 100vw;
+        height: 120px;
+    }
+    main {
+        flex-basis: 60%;
+    }
+    aside {
+        display: block;
+        flex-basis: 40%;
+    }
+    form {
+        align-items: center;
+    }
+    #HR {
+        display: flex;
+    }
+    #LR {
+        display: none   ;
+    }
+    div.section > h3 {
+        text-align: center;
+    }
+    .section {
+        flex-basis: 30vw;
+    }
+}
+
+/*Movile*/
+@media screen and (max-width: 850px){
+    #HR {
+        display: none;
+    }
+    #LR {
+        display: flex;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+
+    }
+    h1, h2, h3 {
+        text-align: center;
+    }
+    img {
+        margin: 0 auto;
+    }
+}
