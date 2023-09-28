@@ -8,19 +8,35 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
+    margin: 20px;
 
-    font-family: cursive;
+    font-family: Syncopate;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(37,37,37,1) 100%);
+}
+
+a {
+    margin-left: 10px;
+    color: white;
+}
+
+p{
+    font-family: Ubuntu;
+    text-align: justify;
+    padding: 10px;
+    color: darkkhaki;
 }
 
 footer {
     text-align: center;
-    width: 100vw;
+    width: 99vw;
 }
 .tituloLateral {
     text-align: center;
+    color: white;
 }
 .tituloSuscripcion {
     text-align: center;
+    color: white;
 }
 .suscribete {
     text-align: center;
@@ -32,23 +48,77 @@ footer {
     width: 49%;
 }
 
-/*Movile*/
+/*Mobile*/
 @media screen and (min-width: 0px) and (max-width: 500px){
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+
+        margin-left: 5%;
+        margin-right: 5%;
+    }
     #HR {
         display: none;
     }
     #LR {
         display: block;
     }
-    header > h1 {
-        width: 99vw;
-        display: block;
-    }
-    body {
-        display: flex;
-        flex-direction: column;
+    header {
+        background: black;
+        width: 90vw;
 
+        border-radius: 15%;
+        margin-bottom: 20px;
     }
+    header > h1 {
+        text-align: center;
+        display: block;
+        font-weight: bold;
+        color: white;
+    }
+    main {
+        width: 90vw;
+        padding-top: 20px;
+        background: black;
+        border-radius: 25px;
+        text-align: center;
+
+        box-shadow: 0px 0px 20px 12px rgb(0, 34, 61);
+    }
+    
+    aside {
+        width: 90vw;
+        margin-top: 25px;
+        padding-bottom: 20px;
+        background-color: black;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 12px rgb(0, 34, 61);
+    }
+
+    .section {
+        width: 90vw;
+        margin-top: 25px;
+        background-color: black;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 12px rgb(0, 34, 61);
+    }
+
+    footer {
+        margin-top: 20px;
+        background-color: black;
+        border-radius: 10px;
+    }
+    .pie {
+        text-align: center;
+    }
+
+    div.section > h3 {
+        text-align: center;
+        color: white;
+    }
+
     h1, h2, h3 {
         text-align: center;
     }
@@ -58,18 +128,43 @@ footer {
 }
 /*Tablet*/
 @media screen and (min-width: 501px) and (max-width: 850px){
-    main {
-        width: 100vw;
-    }
-    aside {
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-    }
     header {
         display: flex;
         width: 100vw;
         height: 120px;
+
+        background: black;
+
+        border-radius: 15%;
+        margin-bottom: 20px;
+    }
+    
+    header > h1 {
+        padding: 15px;
+        font-weight: bold;
+        color: white;
+    }
+
+    main {
+        width: 100vw;
+
+        padding-top: 20px;
+
+        background: black;
+        border-radius: 25px;
+
+        box-shadow: 0px 0px 20px 12px rgb(0, 34, 61); 
+    }
+    
+    aside {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        background-color: black;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 12px rgb(0, 34, 61);
     }
     #HR {
         display: flex;
@@ -85,9 +180,20 @@ footer {
     }
     div.section > h3 {
         text-align: center;
+
+        color: white;
     }
     .section {
         flex-basis: 29vw;
+
+        background-color: black;
+        border-radius: 10px;
+        margin-top: 20px;
+        box-shadow: 0px 0px 20px 12px rgb(0, 34, 61);
+    }
+    .pie {
+        text-align: center;
+        background-color: black;
     }
 }
 
@@ -97,27 +203,67 @@ footer {
         display: flex;
         width: 100vw;
         height: 120px;
+
+        background: black;
+
+        border-radius: 15%;
+        margin-bottom: 20px;
+    }
+
+    header > h1 {
+        padding: 15px;
+        font-weight: bold;
+        color: white;
     }
     main {
         flex-basis: 59%;
+        padding-top: 20px;
+
+        background: black;
+        border-radius: 25px;
+
+        box-shadow: 0px 0px 20px 12px rgb(0, 34, 61);
     }
     aside {
         display: block;
         flex-basis: 39%;
+
+        background-color: black;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 12px rgb(0, 34, 61);
     }
     form {
         align-items: center;
     }
     #HR {
         display: flex;
+        margin-top: 10px;
     }
     #LR {
         display: none;
     }
-    div.section > h3 {
-        text-align: center;
-    }
+
     .section {
         flex-basis: 29vw;
+
+        background-color: black;
+        border-radius: 10px;
+        margin-top: 20px;
+        box-shadow: 0px 0px 20px 12px rgb(0, 34, 61);
+    }
+
+    div.section > h3 {
+        text-align: center;
+
+        color: white;
+    }
+
+    footer {
+        margin-top: 20px;
+        background-color: black;
+        border-radius: 10px;
+    }
+    .pie {
+        text-align: center;
     }
 }
